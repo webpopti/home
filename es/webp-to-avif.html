@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebP to AVIF Converter - Convert WebP to AVIF Without Losing Quality</title>
+    <meta name="description"
+        content="Optimiza y convierte tus imágenes a formato WebP con WebpOptimizer. Herramienta gratuita, rápida y segura para comprimir JPG, PNG y GIF a WebP.">
+    <meta name="keywords"
+        content="webp converter, image to webp, jpg to webp, png to webp, webp optimizer, compress webp, free online converter, client-side image tool">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../logo.svg">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "WebP to AVIF Converter - Convert WebP to AVIF Without Losing Quality",
+    "description": "Optimiza y convierte tus imágenes a formato WebP con WebpOptimizer. Herramienta gratuita, rápida y segura para comprimir JPG, PNG y GIF a WebP.",
+    "url": "https://webpoptimizer.com/es/webp-to-avif.html",
+    "applicationCategory": "ImageProcessingApplication",
+    "operatingSystem": "Any",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    },
+    "featureList": "Client-side processing, Batch conversion, Privacy-focused, Offline capable"
+}
+    </script>
+
+    <link rel="canonical" href="https://webpoptimizer.com/es/webp-to-avif.html" />
+    <link rel="alternate" hreflang="en" href="https://webpoptimizer.com/webp-to-avif.html" />
+    <link rel="alternate" hreflang="x-default" href="https://webpoptimizer.com/webp-to-avif.html" />
+    <link rel="alternate" hreflang="es" href="https://webpoptimizer.com/es/webp-to-avif.html" />
+    <link rel="alternate" hreflang="fr" href="https://webpoptimizer.com/fr/webp-to-avif.html" />
+    <link rel="alternate" hreflang="de" href="https://webpoptimizer.com/de/webp-to-avif.html" />
+    <link rel="alternate" hreflang="ar" href="https://webpoptimizer.com/ar/webp-to-avif.html" />
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="../logo.svg" alt="WebpOptimizer Logo" class="logo-img">
+            <span class="logo-text">WebpOptimizer</span>
+        </a>
+        <div class="nav-links">
+            <a href="jpg-to-webp.html">JPG a WebP</a>
+            <a href="png-to-webp.html">PNG a WebP</a>
+            <a href="gif-to-webp.html">GIF a WebP</a>
+            <a href="webp-to-jpg.html">WebP a JPG</a>
+            <a href="webp-to-png.html">WebP a PNG</a>
+            <a href="webp-to-gif.html">WebP a GIF</a>
+            
+            <button class="more-btn" id="moreBtn" aria-label="More Tools">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            </button>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu"
+            onclick="document.getElementById('overlayMenu').classList.add('active'); document.body.style.overflow = 'hidden';">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </nav>
+    <!-- Full Screen Overlay Menu -->
+    <div class="overlay-menu" id="overlayMenu">
+        <button class="close-overlay" id="closeOverlay">&times;</button>
+        <div class="overlay-content">
+            <div class="overlay-section">
+                <h3>Convert To WebP</h3>
+                <div class="overlay-grid">
+                    <a href="jpg-to-webp.html">JPG a WebP</a>
+                    <a href="jpg-to-webp.html">JPEG to WebP</a>
+                    <a href="png-to-webp.html">PNG a WebP</a>
+                    <a href="gif-to-webp.html">GIF a WebP</a>
+                    <a href="avif-to-webp.html">AVIF to WebP</a>
+                    <a href="svg-to-webp.html">SVG to WebP</a>
+                    <a href="ico-to-webp.html">ICO to WebP</a>
+                    <a href="bmp-to-webp.html">BMP to WebP</a>
+                </div>
+            </div>
+            <div class="overlay-section">
+                <h3>Convert From WebP</h3>
+                <div class="overlay-grid">
+                    <a href="webp-to-jpg.html">WebP a JPG</a>
+                    <a href="webp-to-jpg.html">WebP to JPEG</a>
+                    <a href="webp-to-png.html">WebP a PNG</a>
+                    <a href="webp-to-gif.html">WebP a GIF</a>
+                    <a href="webp-to-avif.html">WebP to AVIF</a>
+                    <a href="webp-to-ico.html">WebP to ICO</a>
+                    <a href="webp-to-bmp.html">WebP to BMP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <h1>WebP to <span class="gradient-text">AVIF</span></h1>
+            <p>Transform your images into highly optimized WebP format instantly. Secure, client-side, and lightning
+                fast.</p>
+        </header>
+
+        <div class="converter-card glass-panel">
+            <div class="drop-zone" id="dropZone">
+                <div class="drop-zone-content">
+                    <svg class="upload-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 16L12 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M9 11L12 8L15 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M8 16H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"
+                            stroke="currentColor" stroke-width="2" />
+                    </svg>
+                    <h3>Suelta tu imagen aquí</h3>
+                    <p>Soporta JPG, PNG, BMP</p>
+                    <button class="btn-primary" id="browseBtn">Buscar Archivos</button>
+                    <input type="file" multiple id="fileInput" accept="image/png, image/jpeg, image/jpg, image/bmp" hidden>
+                </div>
+            </div>
+
+            <div class="editor-section hidden" id="editorSection">
+                <div class="preview-container">
+                    <div class="image-wrapper">
+                        <span class="label">Original</span>
+                        <img id="originalPreview" alt="Original Image">
+                        <div class="file-info" id="originalInfo"></div>
+                    </div>
+                    <div class="image-wrapper">
+                        <span class="label">Comprimido (WebP)</span>
+                        <img id="compressedPreview" alt="Compressed Image">
+                        <div class="file-info" id="compressedInfo"></div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="qualitySlider">Calidad: <span id="qualityValue">20%</span></label>
+                        <input type="range" id="qualitySlider" min="0" max="100" value="20">
+                    </div>
+                    <div class="actions">
+                        <button class="btn-secondary" id="resetBtn">Convertir Otra</button>
+                        <button class="btn-primary" id="downloadBtn">Descargar WebP</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Batch Section -->
+            <div id="batchSection" class="batch-section hidden">
+                <div class="batch-header">
+                    <h2>Conversión por Lotes</h2>
+                    <div class="batch-controls">
+                        <div class="control-group" style="margin-bottom: 0;">
+                            <label for="batchQualitySlider" style="font-size: 0.9rem;">Calidad: <span id="batchQualityValue">80%</span></label>
+                            <input type="range" id="batchQualitySlider" min="0" max="100" value="80" style="width: 150px;">
+                        </div>
+                        <button id="batchDescargarAllBtn" class="btn-primary btn-sm">Descargar Todo</button>
+                        <button id="batchClearBtn" class="btn-secondary btn-sm">Borrar Todo</button>
+                    </div>
+                </div>
+                <div id="batchList" class="batch-list">
+                    <!-- Batch Items will be added here -->
+                </div>
+            </div>
+        </div>
+
+        <section class="how-to-section">
+            <div class="how-to-header">
+                <h2>Cómo Convertir Imágenes a <span class="gradient-text">WebP</span></h2>
+                <p>Sigue estos sencillos pasos para optimizar tus imágenes en segundos.</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Subir Imagen</h3>
+                        <p>Arrastra y suelta tu archivo JPG, PNG o BMP en el cuadro de arriba, o haz clic para buscar.</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Ajustar Calidad</h3>
+                        <p>Usa el control deslizante para equilibrar el tamaño del archivo y la calidad de la imagen. Mira la vista previa al instante.</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Descargar</h3>
+                        <p>Haz clic en "Descargar WebP" para guardar tu imagen optimizada directamente en tu dispositivo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="section-header">
+                <h2>¿Por qué elegir <span class="gradient-text">WebpOptimizer</span>?</h2>
+                <p>Experimenta la mejor tecnología de optimización de imágenes.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13 6L13 12L18 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Ultrarrápido</h3>
+                    <p>Conversión instantánea directamente en tu navegador. Sin subidas al servidor, sin tiempo de espera.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Alta Compresión</h3>
+                    <p>Reduce el tamaño del archivo hasta un 80% manteniendo una excelente calidad visual.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>100% Seguro</h3>
+                    <p>Tus imágenes nunca salen de tu dispositivo. Todo el procesamiento ocurre localmente en tu navegador.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Sin Límites</h3>
+                    <p>Convierte tantas imágenes como quieras. Sin límites diarios, sin restricciones de tamaño de archivo.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Funciona Offline</h3>
+                    <p>Funciona sin conexión a internet una vez cargado. Perfecto para conversiones sobre la marcha.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Multiplataforma</h3>
+                    <p>Totalmente compatible con Chrome, Firefox, Safari y Edge en Windows, Mac y Móvil.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        
+        <section class="trust-section">
+            <div class="trust-content">
+                <h2>Tu Privacidad, <span class="gradient-text">Nuestra Prioridad</span></h2>
+                <p>En WebpOptimizer, vamos más allá de solo convertir archivos: los protegemos. A diferencia de otros conversores, no subimos tus archivos a ningún servidor.</p>
+            </div>
+            <div class="trust-features">
+                <div class="trust-feature">
+                    <div class="trust-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="trust-feature-text">
+                        <h4>Procesamiento del Cliente</h4>
+                        <p>Tus fotos se procesan directamente en tu dispositivo.</p>
+                    </div>
+                </div>
+                <div class="trust-feature">
+                    <div class="trust-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <div class="trust-feature-text">
+                        <h4>Sin Subidas al Servidor</h4>
+                        <p>Nunca vemos, almacenamos ni compartimos tus imágenes.</p>
+                    </div>
+                </div>
+                <div class="trust-feature">
+                    <div class="trust-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                        </svg>
+                    </div>
+                    <div class="trust-feature-text">
+                        <h4>Instantáneo y Seguro</h4>
+                        <p>Cero latencia, 100% privacidad garantizada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="faq-header">
+                <h2>Preguntas <span class="gradient-text">Frecuentes</span></h2>
+                <p>Todo lo que necesitas saber sobre la conversión a WebP</p>
+            </div>
+
+            <div class="faq-content-wrapper">
+                <div class="faq-image">
+                    <img src="../faq.webp" alt="WebP Optimization and Support Illustration" loading="lazy">
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <details>
+                            <summary>¿Qué es el formato WebP?</summary>
+                            <p>WebP is a modern image format developed by Google that provides superior lossless and lossy
+                                compression for images on the web. WebP images are significantly smaller in size compared to
+                                PNGs and JPEGs while maintaining comparable image quality.</p>
+                        </details>
+                    </div>
+
+                    <div class="faq-item">
+                        <details>
+                            <summary>¿Es seguro usar este conversor?</summary>
+                            <p>Yes, absolutely! Unlike other converters, this tool runs entirely in your browser. Your images
+                                are processed locally on your device and are never uploaded to any server, ensuring 100% privacy
+                                and security.</p>
+                        </details>
+                    </div>
+
+                    <div class="faq-item">
+                        <details>
+                            <summary>¿Necesito instalar algún software?</summary>
+                            <p>No installation is required. This tool works directly in your web browser (Chrome, Firefox,
+                                Safari, Edge, etc.) on any device, including desktop computers, tablets, and smartphones.</p>
+                        </details>
+                    </div>
+
+                    <div class="faq-item">
+                        <details>
+                            <summary>¿Hay un límite de tamaño de archivo?</summary>
+                            <p>Since the processing happens on your own device, there are no artificial file size limits imposed
+                                by us. You can convert large high-resolution images as long as your device has enough memory to
+                                handle them.</p>
+                        </details>
+                    </div>
+
+                    <div class="faq-item">
+                        <details>
+                            <summary>¿Por qué debería usar WebP?</summary>
+                            <p>Using WebP makes your website load faster because the file sizes are smaller. This improves user
+                                experience and can boost your SEO rankings, as page speed is a ranking factor for Google.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-footer-styled">
+                <img src="../support-icon.webp" alt="Support" class="support-icon">
+                <div class="faq-footer-content">
+                    <h3>¿Tienes más preguntas?</h3>
+                    <p><a href="contact.html">Contáctanos</a> para soporte y te ayudaremos a optimizar tus imágenes.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="privacy.html">Política de Privacidad</a>
+                <a href="terms.html">Términos de Uso</a>
+                <a href="contact.html">Contacto</a>
+            
+                <div class="lang-switcher-inline" style="display: inline-block; margin-left: 1rem;">
+                    <select onchange="location = this.value;" style="background: transparent; color: var(--text-secondary); border: none; font-size: 0.9rem; cursor: pointer;">
+                        <option value="../webp-to-avif.html" >English</option><option value="webp-to-avif.html" selected>Español</option><option value="../fr/webp-to-avif.html" >Français</option><option value="../de/webp-to-avif.html" >Deutsch</option><option value="../ar/webp-to-avif.html" >العربية</option>
+                    </select>
+                </div>
+            </div>
+            <p>&copy; 2025 WebP Convertercopy; 2025 WebpOptimizercopy; 2025 WebpOptimizer. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
